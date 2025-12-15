@@ -1,0 +1,370 @@
+/* style.css - 元のバージョン */
+
+body {
+    font-family: 'Yu Gothic', YuGothic, 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* 全体のコンテナ */
+.book-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* ページラッパー */
+.page {
+    background-color: transparent;
+    box-shadow: none;
+    height: auto;
+    padding: 0;
+}
+
+/* --- 大問ごとのグループ --- */
+.question-group {
+    background-color: #fff;
+    padding: 50px;
+    margin-bottom: 60px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* 大問タイトル */
+.group-title {
+    font-size: 24px;
+    font-weight: bold;
+    border-left: 6px solid #0056b3;
+    padding-left: 15px;
+    margin-bottom: 40px;
+    margin-top: 0;
+    color: #333;
+}
+/* --- 図のキャプション（図1など）と注釈のエリア --- */
+.figure-notes {
+    text-align: center; /* 全体を中央寄せ */
+    margin-top: 15px;   /* 画像との間隔 */
+    margin-bottom: 20px;
+}
+
+/* 1行目（「図1」）だけを太字にして目立たせる */
+.figure-notes span:first-child {
+    font-weight: bold;
+    font-size: 18px;    /* 文字サイズを少し大きく */
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/* 2行目以降（「※(1)については...」などの注釈）のデザイン */
+.figure-notes span:not(:first-child) {
+    font-weight: normal; /* 太字にしない */
+    font-size: 14px;     /* 注釈なので少し小さく */
+    color: #666;         /* 色を薄くしてメリハリをつける */
+}
+/* --- 小問ごとのスタイル --- */
+.sub-question {
+    margin-bottom: 50px;
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 40px;
+}
+
+.sub-question:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.question-text, .question-text-raw {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* --- 解答群 --- */
+.answer-group {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.answer-group h4 {
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #666;
+}
+/* 第2問c (レール) のレイアウト調整 */
+/* 3つ目の画像（<3>）を、2列ぶんの幅を使って中央に配置 */
+#question-q2c .horizontal-group-2 figure:nth-child(3) {
+    grid-column: 1 / -1;     /* グリッドの最初から最後までまたぐ */
+    justify-self: center;    /* 中央寄せ */
+    margin-top: 15px;        /* 上の段との間隔 */
+    width: 70%;              /* 画像サイズ調整（お好みで） */
+}
+/* 選択肢のレイアウト (テキスト) */
+.choices.text-choices-row {
+    display: flex;
+    flex-direction: column;   
+    gap: 15px;              
+}
+
+.choice-item {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    text-align: left;
+}
+
+.choice-label {
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+/* 表形式の選択肢 */
+table.choice-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+table.choice-table th, table.choice-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+table.choice-table th {
+    background-color: #e9ecef;
+}
+
+/* --- 画像レイアウト --- */
+.question-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.question-images figure {
+    margin: 0;
+    text-align: center;
+}
+
+.question-images img {
+    max-width: 100%;
+    height: auto;
+    border: none;
+    box-shadow: none;
+}
+
+.horizontal-group,
+.horizontal-group-2,
+.horizontal-group-3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px; 
+    flex-wrap: nowrap;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.horizontal-group img,
+.horizontal-group-2 img,
+.horizontal-group-3 img {
+    max-width: 100%;
+    flex: 0 1 auto;
+    height: auto;
+    max-height: 250px;
+    object-fit: contain;
+    border: none;
+    box-shadow: none;
+}
+
+.horizontal-group-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.horizontal-group-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.horizontal-group-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.q2b-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.q2b-layout figure:nth-child(4) { grid-column: 1 / span 1.5; justify-self: end; }
+.q2b-layout figure:nth-child(5) { grid-column: 2.5 / span 1.5; justify-self: start; }
+
+/* 画像選択肢のレイアウト */
+.choices.image-choices {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.choices.image-choices .choice-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+.choices.image-choices img {
+    max-width: 100%;
+    height: auto;
+    border: none;
+    margin-top: 5px;
+}
+
+.choices.image-choices .choice-label {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* 個別問題の画像サイズ調整 */
+#question-q3c .question-images img,
+#question-q4a .question-images img,
+#question-q4b .question-images img,
+#question-q5a .question-images img {
+    max-width: 300px;
+    max-height: 250px;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+#question-q3c .choices.image-choices img,
+#question-q4a .choices.image-choices img {
+    max-width: 250px;
+    max-height: 200px;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+#question-q4d .question-images img {
+    max-height: 150px;
+    width: 100%;
+    object-fit: contain;
+}
+
+#question-q7c .horizontal-group-2 figure:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    margin-top: 15px;
+    max-height: 400px;
+    width: auto;
+}
+
+#question-q7c .horizontal-group-2 figure:nth-child(3) img {
+    max-height: 200px;
+    width: auto;
+}
+
+#question-q8a .question-images img {
+    max-width: 300px;
+    max-height: 450px;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+/* 採点ボタン周り */
+.grading-area {
+    text-align: center;
+    margin-top: 40px;
+}
+.grade-button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.result-mark {
+    margin-left: 10px;
+    font-weight: bold;
+}
+.result-mark.correct { color: greenyellow; }
+.result-mark.wrong { color: red; }
+.answered-correct { background-color: #f0fff0; }
+.answered-wrong { background-color: #fff0f0; }
+
+/* 基本的にすべての問題グループを非表示にする */
+.question-group {
+    display: none;
+}
+
+/* 「active」クラスがついたグループだけ表示する */
+.question-group.active {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* ナビゲーションボタン（前へ・次へ）のエリア */
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.nav-btn {
+    padding: 10px 30px;
+    font-size: 16px;
+    border: 1px solid #0056b3;
+    background-color: #fff;
+    color: #0056b3;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #e6f0fa;
+}
+
+/* 「次へ」ボタンは少し目立たせる */
+.nav-btn.next {
+    background-color: #0056b3;
+    color: #fff;
+}
+.nav-btn.next:hover {
+    background-color: #004494;
+}
+
+/* 無効なボタン（最初のページの「前へ」など） */
+.nav-btn:disabled {
+    border-color: #ccc;
+    background-color: #eee;
+    color: #999;
+    cursor: not-allowed;
+}
+
+/* 採点エリアは最後のページまで隠す（JSで制御） */
+.grading-area {
+    display: none; 
+}
+
+/* フェードインアニメーション */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
