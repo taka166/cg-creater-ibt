@@ -109,11 +109,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 else if (q.id === 'q10c') captions = ["図1", "図2"];
                 q.images.forEach((imgPath, idx) => {
                     let caption = captions[idx] || '';
+                    
+                    // 特殊なキャプション設定
                     if (q.id === 'q7c') caption = idx === 0 ? '図2' : (idx === 1 ? '図3' : '図4');
                     if (q.id === 'q3c') caption = '図5';
                     if (q.id === 'q10a' && idx >= 4) return;
 
+                    // ★追加：q2cの3枚目(index 2)の時だけ、「図3」という文字を強制的に追加
+                    if (q.id === 'q2c' && idx === 2) {
+                        caption += '<div style="font-weight:bold; margin-top:5px; font-size:16px; color:#000;">図3</div>';
+                    }
+
                     caption = makeTextBold(caption);
+                    
                     questionHTML += `
                         <figure>
                             <img src="${imgPath}" alt="図" class="question-model">

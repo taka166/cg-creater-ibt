@@ -1,5 +1,3 @@
-/* style.css - 元のバージョン */
-
 body {
     font-family: 'Yu Gothic', YuGothic, 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
     margin: 0;
@@ -60,9 +58,9 @@ body {
 
 /* 2行目以降（「※(1)については...」などの注釈）のデザイン */
 .figure-notes span:not(:first-child) {
-    font-weight: normal; /* 太字にしない */
-    font-size: 14px;     /* 注釈なので少し小さく */
-    color: #666;         /* 色を薄くしてメリハリをつける */
+    font-weight: normal; 
+    font-size: 14px; 
+    color: #666; 
 }
 /* --- 小問ごとのスタイル --- */
 .sub-question {
@@ -367,4 +365,9 @@ table.choice-table th {
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+.no-break {
+    white-space: nowrap;       /* 内部での改行を禁止 */
+    display: inline-block;     /* ブロックとして扱う */
 }
