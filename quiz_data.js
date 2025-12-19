@@ -1,0 +1,1245 @@
+const quizData = [
+  {
+    "id": "q1_1",
+    "page": 5,
+    "question_text": "以下は，知的財産権に関する問題である．【　】に最も適するもの，または最も適するものの組み合わせを解答群から選び，記号で答えよ．\n\n（１） 知的財産権とは，人間が知的な創作活動によって生み出した成果である知的財産に対する権利の総称である．知的財産権には，おもに著作権と<span class='no-break'>【 a 】</span>があり，<span class='no-break'>【 a 】</span>には商標権などが含まれる．<span class='no-break'>【 a 】</span>を取得するには官庁への出願，登録などの手続きをする必要があるが，著作権は取得のための手続きは必要でない．",
+    "images": [],
+    "choices": [
+      {
+        "label": "ア",
+        "text": "著作者人格権"
+      },
+      {
+        "label": "イ",
+        "text": "著作隣接権"
+      },
+      {
+        "label": "ウ",
+        "text": "特許権"
+      },
+      {
+        "label": "エ",
+        "text": "産業財産権"
+      }
+    ]
+  },
+  {
+    "id": "q1_2",
+    "page": 5,
+    "question_text": "（２） 著作者の権利には2つの種類がある．他人に譲渡できる著作財産権と，他人に譲渡できない<span class='no-break'>【 a 】</span>である．",
+    "images": [],
+    "choices": [
+      {
+        "label": "ア",
+        "text": "公衆送信権"
+      },
+      {
+        "label": "イ",
+        "text": "著作者人格権"
+      },
+      {
+        "label": "ウ",
+        "text": "複製権"
+      },
+      {
+        "label": "エ",
+        "text": "翻訳権"
+      }
+    ]
+  },
+  {
+    "id": "q1_3",
+    "page": 5,
+    "question_text": "（３） 以下は，2025年7月に行われた授業での，著作権の保護期間に関する先生と学生の会話である．\n\n［先生と学生の会話］\n学　生： 「 著作権は，著作者に認められている権利だと聞きました．著作権はいつ発生するのですか」\n\n先　生： 「 著作権の始まりは著作者が著作物を<span class='no-break'>【 a 】</span>したときです．そして，著作者の 死後も著作権は続きます」\n\n\n学　生： 「 著作者が亡くなったあとも続くのですね」\n\n先　生： 「 原則として死後<span class='no-break'>【 b 】</span>続きます．これを保護期間とよびます」",
+    "images": [],
+    "choices": [
+      {
+        "label": "ア",
+        "text_parts": {
+          "a": "創作",
+          "b": "50年"
+        }
+      },
+      {
+        "label": "イ",
+        "text_parts": {
+          "a": "創作",
+          "b": "70年"
+        }
+      },
+      {
+        "label": "ウ",
+        "text_parts": {
+          "a": "着想",
+          "b": "50年"
+        }
+      },
+      {
+        "label": "エ",
+        "text_parts": {
+          "a": "着想",
+          "b": "70年"
+        }
+      }
+    ],
+    "table_header": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "id": "q1_4",
+    "page": 6,
+    "question_text": "（４） 以下の文章は，A君と，A君の兄の行為である．このうち，著作権侵害に該当するおそれがあるものは<span class='no-break'>【 a 】</span>である．\n\nA君は，最近購入した雑誌に好きなアイドルの写真が掲載されていたため，スマートフォンでその写真を撮影して画像を保存した．また，A君が利用しているSNSにその画像をアップロードしてA君の兄に知らせた．A君の兄はSNSでその画像に「いいね」を付けてくれた．いまのところ，その画像に「いいね」を付けてくれたのは，家族であるA君の兄だけである．",
+    "images": [],
+    "choices": [
+      {
+        "label": "ア",
+        "text": "A君がスマートフォンで写真を撮影する行為。"
+      },
+      {
+        "label": "イ",
+        "text": "A君がSNSに画像をアップロードする行為。"
+      },
+      {
+        "label": "ウ",
+        "text": "A君がSNSに画像をアップロードしたことをA君の兄に知らせる行為。"
+      },
+      {
+        "label": "エ",
+        "text": "A君の兄がSNSで「いいね」を付ける行為。"
+      }
+    ]
+  },
+  {
+    "id": "q2a",
+    "page": 9,
+    "question_text": "以下は，モデリングに関する問題である．ａ～ｄの問いに最も適するものを解答群から選び，記号で答えよ．\n\nａ． 図１〈1〉は，円錐形のオブジェクトをワールド座標系（赤，緑，青の線）のX軸の上に配置したものであり，オブジェクトのローカル座標系の座標軸を黒色で示している．このオブジェクトを複製してローカル座標系で操作①を行ったところ，〈2〉のように形状の一部が重なった配置になり，続いてワールド座標系で操作②を行ったところ，〈3〉のように2つが底面で接するような配置になった．これらの操作の組み合わせとして，適切なものはどれか．なお，回転の正方向は，各軸の正方向から原点を見たときに反時計まわり（左まわり）とする．",
+    "images": [
+      "extracted_images\\image_0.jpeg",
+      "extracted_images\\image_1.jpeg",
+      "extracted_images\\image_2.jpeg"
+    ],
+    "figure_notes": [
+      "図１",
+      "※〈1〉については，オブジェクトと各軸の位置関係を示すため，オブジェクトを半透明で表示している．"
+    ],
+    "choices": [
+      {
+        "label": "ア",
+        "text_parts": {
+          "操作①": "X軸を中心に 180° 回転",
+          "操作②": "Y軸マイナス方向へ移動"
+        }
+      },
+      {
+        "label": "イ",
+        "text_parts": {
+          "操作①": "X軸を中心に 180° 回転",
+          "操作②": "X軸プラス方向へ移動"
+        }
+      },
+      {
+        "label": "ウ",
+        "text_parts": {
+          "操作①": "Y軸を中心に 180° 回転",
+          "操作②": "X軸マイナス方向へ移動"
+        }
+      },
+      {
+        "label": "エ",
+        "text_parts": {
+          "操作①": "Y軸を中心に 180° 回転",
+          "操作②": "Z軸プラス方向へ移動"
+        }
+      },
+      {
+        "label": "オ",
+        "text_parts": {
+          "操作①": "Z軸を中心に 180° 回転",
+          "操作②": "Z軸マイナス方向へ移動"
+        }
+      },
+      {
+        "label": "カ",
+        "text_parts": {
+          "操作①": "Z軸を中心に 180° 回転",
+          "操作②": "Y軸プラス方向へ移動"
+        }
+      }
+    ],
+    "table_header": [
+      "操作①",
+      "操作②"
+    ]
+  },
+  {
+    "id": "q2b",
+    "page": 10,
+    "question_text": "ｂ． 図２〈1〉の円柱のモデルと〈2〉のトーラス状のモデルを〈3〉のように配置した．集合演算を行い〈4〉のような指輪のモデルAを制作したいのだが，結果として〈5〉のモデルBが生成された．目的の形状である〈4〉のモデルAを生成するためには，どのような修正を行えばよいか．",
+    "images": [
+      "extracted_images\\image_3.jpeg",
+      "extracted_images\\image_4.jpeg",
+      "extracted_images\\image_5.jpeg",
+      "extracted_images\\image_6.jpeg",
+      "extracted_images\\image_7.jpeg"
+    ],
+    "figure_notes": [
+      "図2"
+    ],
+    "choices": [
+      {
+        "label": "ア",
+        "text": "差の演算の順序を「トーラス-円柱」から「円柱-トーラス」に修正する。"
+      },
+      {
+        "label": "イ",
+        "text": "差の演算の順序を「円柱ートーラス」から「トーラスー円柱」に修正する。"
+      },
+      {
+        "label": "ウ",
+        "text": "差の演算から積の演算に修正する。"
+      },
+      {
+        "label": "エ",
+        "text": "積の演算から和の演算に修正する。"
+      }
+    ]
+  },
+  {
+    "id": "q2c",
+    "page": 11,
+    "question_text": "ｃ． 鉄道のレールをモデリングするために，図３〈1〉の断面形状のスプライン曲線と，〈2〉の2本のレールの軌道にあたるスプライン曲線を用意した．これら〈1〉，〈2〉を用いて，〈3〉のような鉄道のレール形状を作成する方法として，適切なものはどれか．",
+    "images": [
+      "extracted_images/q2c_q1.png",
+      "extracted_images/q2c_q2.png",
+      "extracted_images\\image_10.jpeg"
+    ],
+    "figue_notes": [
+      "図3"
+    ],
+    "choices": [
+      {
+        "label": "ア",
+        "text": "〈1〉の断面形状を〈2〉の2本のレールの軌道に沿って、それぞれ押し出しのスイープをする。"
+      },
+      {
+        "label": "イ",
+        "text": "〈1〉の断面形状をZ軸に沿ってスイープし、〈2〉の2本のレールの軌道の位置に配置する。"
+      },
+      {
+        "label": "ウ",
+        "text": "〈2〉の2本のレールの軌道を〈1〉の断面形状に沿って、それぞれ回転のスイープをする。"
+      },
+      {
+        "label": "エ",
+        "text": "〈2〉の2本のレールの軌道をY軸による回転のスイープをして、〈1〉の断面形状で整える。"
+      }
+    ]
+  },
+  {
+    "id": "q2d",
+    "page": 11,
+    "question_text": "ｄ． モデリング手法の1つであるスカルプトツールの説明として，正しいものはどれか．",
+    "images": [],
+    "choices": [
+      {
+        "label": "ア",
+        "text": "3次元ディジタイザでデータ化する。"
+      },
+      {
+        "label": "イ",
+        "text": "数式を使って立体形状を発生させる。"
+      },
+      {
+        "label": "ウ",
+        "text": "立体形状の表面をブラシで塗るようにして形状を変形させる。"
+      },
+      {
+        "label": "エ",
+        "text": "1つの対象物を複数の位置から写した画像群から立体データを作成する。"
+      }
+    ]
+  },
+  {
+    "id": "q3a",
+    "page": 12,
+    "question_text": "以下は，マテリアルとレンダリングに関する問題である．ａ～ｄの問いに最も適するものを解答群から選び，記号で答えよ．\n\nａ． 図１のモデルのマテリアル成分を調整し，色やハイライトを図２のように変更した．調整したマテリアル成分は2種類である．その組み合わせとして，適切なものはどれか．",
+    "images": [
+      "extracted_images\\image_11.jpeg",
+      "extracted_images\\image_12.jpeg"
+    ],
+    "choices": [
+      {
+        "label": "ア",
+        "text_parts": {
+          "成分1": "拡散反射光",
+          "成分2": "鏡面反射光 と屈折"
+        }
+      },
+      {
+        "label": "イ",
+        "text_parts": {
+          "成分1": "拡散反射光",
+          "成分2": "環境光"
+        }
+      },
+      {
+        "label": "ウ",
+        "text_parts": {
+          "成分1": "鏡面反射光",
+          "成分2": "透過"
+        }
+      },
+      {
+        "label": "エ",
+        "text_parts": {
+          "成分1": "鏡面反射光",
+          "成分2": "透過と屈折"
+        }
+      },
+      {
+        "label": "オ",
+        "text_parts": {
+          "成分1": "反射",
+          "成分2": "拡散反射光"
+        }
+      },
+      {
+        "label": "カ",
+        "text_parts": {
+          "成分1": "反射",
+          "成分2": "透過と屈折"
+        }
+      }
+    ],
+    "table_header": [
+      "成分1",
+      "成分2"
+    ]
+  },
+  {
+    "id": "q3b",
+    "page": 12,
+    "question_text": "ｂ． 図３のモデルにカラーテクスチャを適用し，図４のような空間を作成した．さらに質感を高めるために，モデルの表面に凹凸の表現を施したい．ただし，レンダリング時にポリゴン数は増えない方法とする．使用した方法として，適切なものはどれか．",
+    "images": [
+      "extracted_images\\image_13.jpeg",
+      "extracted_images\\image_14.jpeg"
+    ],
+    "choices": [
+      {
+        "label": "ア",
+        "text": "サブディビジョンサーフェス"
+      },
+      {
+        "label": "イ",
+        "text": "パンプマッピング"
+      },
+      {
+        "label": "ウ",
+        "text": "リフレクションマッピング"
+      },
+      {
+        "label": "エ",
+        "text": "ディスプレイスメントマッピング"
+      }
+    ]
+  },
+  {
+    "id": "q3c",
+    "page": 13,
+    "question_text": "ｃ． 図５のワイヤフレーム画像を，モデル形状の確認のためフォンシェーディングに変更して表示したものはどれか．",
+    "images": [
+      "extracted_images\\image_15.png"
+    ],
+    "choices": [
+      {
+        "label": "ア",
+        "image": "extracted_images\\image_16.png"
+      },
+      {
+        "label": "イ",
+        "image": "extracted_images\\image_17.jpeg"
+      },
+      {
+        "label": "ウ",
+        "image": "extracted_images\\image_18.jpeg"
+      },
+      {
+        "label": "エ",
+        "image": "extracted_images\\image_19.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "q3d",
+    "page": 14,
+    "question_text": "ｄ． 図６のシーンに対し，あるレンダリング方法を適用して図７を得た．このようなレンダリング方法を何とよぶか．",
+    "images": [
+      "extracted_images\\image_20.jpeg",
+      "extracted_images\\image_21.png"
+    ],
+    "choices": [
+      {
+        "label": "ア",
+        "text": "サブサーフェススキャッタリング"
+      },
+      {
+        "label": "イ",
+        "text": "ボリュームレンダリング"
+      },
+      {
+        "label": "ウ",
+        "text": "トゥーンレンダリング"
+      },
+      {
+        "label": "エ",
+        "text": "コースティクス"
+      }
+    ]
+  },
+  {
+    "id": "q4a",
+    "page": 15,
+    "question_text": "以下は，アニメーションに関する問題である．ａ～ｄの問いに最も適するものを解答群から選び，記号で答えよ．\n\nａ． 座標軸（赤線）に沿って，図１のオブジェクトに対してツイストのデフォーメーションを適用した結果はどれか．",
+    "images": [
+      "extracted_images\\image_22.jpeg"
+    ],
+    "choices": [
+      {
+        "label": "ア",
+        "image": "extracted_images\\image_23.jpeg"
+      },
+      {
+        "label": "イ",
+        "image": "extracted_images\\image_24.jpeg"
+      },
+      {
+        "label": "ウ",
+        "image": "extracted_images\\image_25.jpeg"
+      },
+      {
+        "label": "エ",
+        "image": "extracted_images\\image_26.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "q4b",
+    "page": 16,
+    "question_text": "ｂ． 図２は，キャラクタをアニメーションさせるときに作成するもので，ボーンオブジェクトで 階層構造を形成したものである．これを何とよぶか．",
+    "images": [
+      "extracted_images\\image_27.jpeg"
+    ],
+    "choices": [
+      {
+        "label": "ア",
+        "text": "ブレンドシェイプ"
+      },
+      {
+        "label": "イ",
+        "text": "グループ化"
+      },
+      {
+        "label": "ウ",
+        "text": "スキニング"
+      },
+      {
+        "label": "エ",
+        "text": "スケルトン構造"
+      }
+    ]
+  },
+  {
+    "id": "q4c",
+    "page": 16,
+    "question_text": "ｃ． 図３は，設問ｂの図２のボーンオブジェクトにある手法を用いてエンドエフェクタを設定 し，動きを制御している．図４は，図３を変形してアニメーションを作成したものである． このような手法を何とよぶか．",
+    "images": [
+      "extracted_images\\image_28.png",
+      "extracted_images\\image_29.jpeg"
+    ],
+    "choices": [
+      {
+        "label": "ア",
+        "text": "スプライン補間"
+      },
+      {
+        "label": "イ",
+        "text": "リニア補間"
+      },
+      {
+        "label": "ウ",
+        "text": "インバースキネマティクス"
+      },
+      {
+        "label": "エ",
+        "text": "フォワードキネマティクス"
+      }
+    ]
+  },
+  {
+    "id": "q4d",
+    "page": 17,
+    "question_text": "ｄ． 図５〈1〉に示す車のモデルをピンク色の線に沿って，〈2〉～〈4〉のように移動させるための アニメーション手法はどれか．",
+    "images": [
+      "extracted_images\\image_30.jpeg",
+      "extracted_images\\image_31.jpeg",
+      "extracted_images\\image_32.jpeg",
+      "extracted_images\\image_33.jpeg"
+    ],
+    "figure_notes": [
+      "図5"
+    ],
+    "choices": [
+      {
+        "label": "ア",
+        "text": "パスアニメーション"
+      },
+      {
+        "label": "イ",
+        "text": "ファンクションカーブ"
+      },
+      {
+        "label": "ウ",
+        "text": "パスデフォーム"
+      },
+      {
+        "label": "エ",
+        "text": "誇張表現"
+      }
+    ]
+  },
+  {
+    "id": "q5a",
+    "page": 18,
+    "question_text": "以下は，カメラワークに関する問題である．ａ～ｄの問いに最も適するものを解答群から選び，記号で答えよ．\n\nａ． 図１はあるシーンの被写体，セット，カメラの位置を示している．このシーンをカメラのパンを用いて撮影したとき，画面に映る画として適切なものはどれか．なお，解答群のア～エは，カットを一定の時間間隔で抽出し，左から並べたものである．",
+    "images": [
+      "extracted_images\\image_34.jpeg"
+    ],
+    "choices": [
+      {
+        "label": "ア",
+        "image": "extracted_images\\q_5a_a.png"
+      },
+      {
+        "label": "イ",
+        "image": "extracted_images\\q_5a_b.png"
+      },
+      {
+        "label": "ウ",
+        "image": "extracted_images\\q_5a_c.png"
+      },
+      {
+        "label": "エ",
+        "image": "extracted_images\\q_5a_a.png"
+      }
+    ]
+  },
+  {
+    "id": "q5b",
+    "page": 19,
+    "question_text": "ｂ． 図２～図４は，被写体を異なるカメラアングルで撮影したものである．図２～図４のカメラアングルの名称の組み合わせとして，適切なものはどれか．",
+    "images": [
+      "extracted_images\\image_51.jpeg",
+      "extracted_images\\image_52.jpeg",
+      "extracted_images\\image_53.jpeg"
+    ],
+    "choices": [
+      {
+        "label": "ア",
+        "text_parts": {
+          "図2": "ハイアングル",
+          "図3": "アイレベル",
+          "図4": "ローアングル"
+        }
+      },
+      {
+        "label": "イ",
+        "text_parts": {
+          "図2": "ローアングル",
+          "図3": "アイレベル",
+          "図4": "ハイアングル"
+        }
+      },
+      {
+        "label": "ウ",
+        "text_parts": {
+          "図2": "ローアングル",
+          "図3": "ハイアングル",
+          "図4": "アイレベル"
+        }
+      },
+      {
+        "label": "エ",
+        "text_parts": {
+          "図2": "ローアングル",
+          "図3": "アイレベル",
+          "図4": "ハイアングル"
+        }
+      },
+      {
+        "label": "オ",
+        "text_parts": {
+          "図2": "ハイアングル",
+          "図3": "アイレベル",
+          "図4": "ローアングル"
+        }
+      },
+      {
+        "label": "カ",
+        "text_parts": {
+          "図2": "ハイアングル",
+          "図3": "ローアングル",
+          "図4": "アイレベル"
+        }
+      }
+    ],
+    "table_header": [
+      "図2",
+      "図3",
+      "図4"
+    ]
+  },
+  {
+    "id": "q5c",
+    "page": 19,
+    "question_text": "ｃ． カメラワークにおけるフレーミングとは，何をどのように見せたいかという制作者の意図の表れである．画面に被写体などをどれくらいのサイズに収めるかによって，フレーミングの名称と用途が変化する．フレーミングの用途について述べた文章のうち，ミディアムショットの説明として，適切なものはどれか．",
+    "images": [],
+    "choices": [
+      {
+        "label": "ア",
+        "text": "登場人物の位置関係などの状況説明や、情景の描写に用いられる。"
+      },
+      {
+        "label": "イ",
+        "text": "人物の目や口などの特定の対象の詳細を見せる場合に用いられる。"
+      },
+      {
+        "label": "ウ",
+        "text": "体全体でのポーズやアクションを見せる場合などに用いられる。"
+      },
+      {
+        "label": "エ",
+        "text": "人物の表情を見せる場合などに用いられる。自然で安定感のあるサイズとされる。"
+      }
+    ]
+  },
+  {
+    "id": "q5d",
+    "page": 20,
+    "question_text": "ｄ． 図５はカメラのアニメーションのうち，ズームによるカメラの画角の変化を表している．図６がズームを行う前のカメラからの見た目であるとき，ズームで画角を狭めた場合の見た目として，適切なものはどれか．なお，解答群の画像は，それぞれ1カット内の最後のフレームを示している．",
+    "images": [
+      "extracted_images\\image_54.jpeg",
+      "extracted_images\\image_55.jpeg"
+    ],
+    "choices": [
+      {
+        "label": "ア",
+        "image": "extracted_images\\image_56.jpeg"
+      },
+      {
+        "label": "イ",
+        "image": "extracted_images\\image_57.jpeg"
+      },
+      {
+        "label": "ウ",
+        "image": "extracted_images\\image_58.jpeg"
+      },
+      {
+        "label": "エ",
+        "image": "extracted_images\\image_59.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "q6a",
+    "page": 21,
+    "question_text": "以下は，ライティングに関する問題である．ａ～ｄの問いに最も適するものを解答群から選び，記号で答えよ．\n\nａ． 面光源を用いて宙に浮いた球体を図１のようにライティングした．つぎに，面光源の設定を変更し，図２のような結果の影を得た．このとき，面光源の変更の内容として，適切なものはどれか．",
+    "images": [
+      "extracted_images\\image_60.jpeg",
+      "extracted_images\\image_61.jpeg"
+    ],
+    "choices": [
+      {
+        "label": "ア",
+        "text": "面光源の面積を小さくした。"
+      },
+      {
+        "label": "イ",
+        "text": "面光源の面積を大きくした。"
+      },
+      {
+        "label": "ウ",
+        "text": "面光源の明るさを強めつつ、上に移動した。"
+      },
+      {
+        "label": "エ",
+        "text": "面光源の明るさを弱めつつ、下に移動した。"
+      }
+    ]
+  },
+  {
+    "id": "q6b",
+    "page": 21,
+    "question_text": "ｂ． 図３および図４は，それぞれ光源を1つ配置して，円柱のモデルをライティングし，影を作成したものである．図３および図４の光源の種類の組み合わせとして，適切なものはどれか．",
+    "images": [
+      "extracted_images\\image_62.jpeg",
+      "extracted_images\\image_63.jpeg"
+    ],
+    "choices": [
+      {
+        "label": "ア",
+        "text_parts": {
+          "図3": "方向性ライト(directional light)",
+          "図4": "スポットライト (spot light)"
+        }
+      },
+      {
+        "label": "イ",
+        "text_parts": {
+          "図3": "方向性ライト(directional light)",
+          "図4": "ポイントライト(point light)"
+        }
+      },
+      {
+        "label": "ウ",
+        "text_parts": {
+          "図3": "ポイントライト(point light)",
+          "図4": "方向性ライト(directional light)"
+        }
+      },
+      {
+        "label": "エ",
+        "text_parts": {
+          "図3": "ポイントライト (point light)",
+          "図4": "スポットライト (spot light)"
+        }
+      },
+      {
+        "label": "オ",
+        "text_parts": {
+          "図3": "スポットライト (spot light)",
+          "図4": "方向性ライト(directional light)"
+        }
+      },
+      {
+        "label": "カ",
+        "text_parts": {
+          "図3": "スポットライト(spot light)",
+          "図4": "ポイントライト(point light)"
+        }
+      }
+    ],
+    "table_header": [
+      "図3",
+      "図4"
+    ]
+  },
+  {
+    "id": "q6c",
+    "page": 22,
+    "question_text_raw": "ｃ． 3次元CGのライトは，それぞれのライトがもっている光のRGB成分を設定してレンダリング\nすることが可能である．図５の2つのライトは，RGB成分がそれぞれ0～1までの値をとり，\n（R, G, B）=（0, 0, 1）および（R, G, B）=（1, 1, 0）に設定されている．このとき，2つのライト\nの光が重なり合う斜線模様の部分は何色になるか．",
+    "images": [
+      "extracted_images/q6c_q.png"
+    ],
+    "choices": [
+      {
+        "label": "ア",
+        "text": "白"
+      },
+      {
+        "label": "イ",
+        "text": "緑"
+      },
+      {
+        "label": "ウ",
+        "text": "赤"
+      },
+      {
+        "label": "エ",
+        "text": "オレンジ"
+      },
+      {
+        "label": "オ",
+        "text": "マゼンタ"
+      },
+      {
+        "label": "カ",
+        "text": "シアン"
+      }
+    ]
+  },
+  {
+    "id": "q6d",
+    "page": 23,
+    "question_text": "ｄ． 図６は，三灯照明のすべての光量を最大値に設定してライティングを施したものである．しかし，想定したものと異なったため，それぞれのライトの光量を三灯照明の役割に基づき調整して図７を作成した．このときの調整方法として，適切なものはどれか．",
+    "images": [
+      "extracted_images\\image_65.jpeg",
+      "extracted_images\\image_66.jpeg"
+    ],
+    "choices": [
+      {
+        "label": "ア",
+        "text": "キーライトとバックライトによる照度が最も大きくなるように調整した。"
+      },
+      {
+        "label": "イ",
+        "text": "キーライトによる照度が最も大きくなるように調整した。"
+      },
+      {
+        "label": "ウ",
+        "text": "バックライトによる照度が最も大きくなるように調整した。"
+      },
+      {
+        "label": "エ",
+        "text": "フィルライトによる照度が最も大きくなるように調整した。"
+      }
+    ]
+  },
+  {
+    "id": "q7a",
+    "page": 24,
+    "question_text": "以下は，写真撮影とレタッチに関する問題である．ａ～ｄの問いに最も適するものを解答群から選び，記号で答えよ．\n\nａ． 被写体を画面のどこに配置するかで，写真の印象が大きく変わる．図１は，上下左右に分割するラインを想定して，そのライン上や交点上に，ポイントとなる要素を配置する構図である．この構図を何とよぶか．",
+    "images": [
+      "extracted_images\\q_7a.png"
+    ],
+    "choices": [
+      {
+        "label": "ア",
+        "text": "黄金分割法"
+      },
+      {
+        "label": "イ",
+        "text": "フラクタル分割法"
+      },
+      {
+        "label": "ウ",
+        "text": "四角形分割法"
+      },
+      {
+        "label": "エ",
+        "text": "三分割法"
+      }
+    ]
+  },
+  {
+    "id": "q7b",
+    "page": 24,
+    "question_text": "ｂ． 撮影物に焦点を合わせたとき，その撮影物の前後も含めて焦点が合っている範囲のことを何とよぶか．",
+    "images": [],
+    "choices": [
+      {
+        "label": "ア",
+        "text": "焦点距離"
+      },
+      {
+        "label": "イ",
+        "text": "ディフューザ"
+      },
+      {
+        "label": "ウ",
+        "text": "フレーミング"
+      },
+      {
+        "label": "エ",
+        "text": "被写界深度"
+      }
+    ]
+  },
+  {
+    "id": "q7c",
+    "page": 25,
+    "question_text": "ｃ． 図２の写真の濃度を図３のように変更した．図３のヒストグラムはどれか．なお，図４は，図２のヒストグラムで，画素値0が黒，画素値255が白を表している．",
+    "images": [
+      "extracted_images\\image_68.jpeg",
+      "extracted_images\\image_69.jpeg",
+      "extracted_images/q_7a_question.png"
+    ],
+    "choices": [
+      {
+        "label": "ア",
+        "image": "extracted_images/q_7a_a.png"
+      },
+      {
+        "label": "イ",
+        "image": "extracted_images/q_7a_b.png"
+      },
+      {
+        "label": "ウ",
+        "image": "extracted_images/q_7a_c.png"
+      },
+      {
+        "label": "エ",
+        "image": "extracted_images/q_7a_d.png"
+      }
+    ]
+  },
+  {
+    "id": "q7d",
+    "page": 26,
+    "question_text": "ｄ． 図５にフィルタ処理を適用し，図６を制作した．適用した処理はどれか．",
+    "images": [
+      "extracted_images\\image_75.jpeg",
+      "extracted_images\\image_76.jpeg"
+    ],
+    "choices": [
+      {
+        "label": "ア",
+        "text": "ホワイトバランス"
+      },
+      {
+        "label": "イ",
+        "text": "ソラリゼーション"
+      },
+      {
+        "label": "ウ",
+        "text": "アンシャープマスク"
+      },
+      {
+        "label": "エ",
+        "text": "ぼかし効果"
+      }
+    ]
+  },
+  {
+    "id": "q8a",
+    "page": 27,
+    "question_text": "以下は，遠近法，動き，文字組みに関する問題である．ａ～ｄの問いに最も適するものを解答群から選び，記号で答えよ．\n\nａ． 図１に示す絵は，遠くにあるものほど青味がかって見え，また同時に遠くにあるものほど輪郭が曖昧に見える．このように，大気がもつ性質を利用して奥行きを表現する手法を何とよぶか．",
+    "images": [
+      "extracted_images\\image_77.jpeg"
+    ],
+    "choices": [
+      {
+        "label": "ア",
+        "text": "空気遠近法"
+      },
+      {
+        "label": "イ",
+        "text": "二点透視図法"
+      },
+      {
+        "label": "ウ",
+        "text": "三点透視図法"
+      },
+      {
+        "label": "エ",
+        "text": "線遠近法"
+      }
+    ]
+  },
+  {
+    "id": "q8b",
+    "page": 27,
+    "question_text": "ｂ． 映画やテレビ放送などの動画において，1秒あたりに表示される画面の枚数のことを何とよぶか．",
+    "images": [],
+    "choices": [
+      {
+        "label": "ア",
+        "text": "スローインスローアウト"
+      },
+      {
+        "label": "イ",
+        "text": "フレームレート"
+      },
+      {
+        "label": "ウ",
+        "text": "仮現運動"
+      },
+      {
+        "label": "エ",
+        "text": "ロトスコープ"
+      }
+    ]
+  },
+  {
+    "id": "q8c",
+    "page": 28,
+    "question_text": "ｃ． 図２〈1〉，〈2〉は欧文書体で書かれた文字である．それぞれの書体を何とよぶか．",
+    "figure_notes": [
+      "図2"
+    ],
+    "images": [
+      "extracted_images/q8c_q1.png",
+      "extracted_images/q8c_q2.png"
+    ],
+    "choices": [
+      {
+        "label": "ア",
+        "text_parts": {
+          "<1>": "サンセリフ体",
+          "<2>": "ゴシック体"
+        }
+      },
+      {
+        "label": "イ",
+        "text_parts": {
+          "<1>": "サンセリフ体",
+          "<2>": "セリフ体"
+        }
+      },
+      {
+        "label": "ウ",
+        "text_parts": {
+          "<1>": "セリフ体",
+          "<2>": "サンセリフ体"
+        }
+      },
+      {
+        "label": "エ",
+        "text_parts": {
+          "<1>": "ゴシック体",
+          "<2>": "セリフ体"
+        }
+      }
+    ],
+    "table_header": [
+      "<1>",
+      "<2>"
+    ]
+  },
+  {
+    "id": "q8d",
+    "page": 28,
+    "question_text": "ｄ． 図３の文字組みにカーニングを施したい．適切な処理結果はどれか．",
+    "images": [
+      "extracted_images/q8d_q.png"
+    ],
+    "choices": [
+      {
+        "label": "ア",
+        "image": "extracted_images\\q8d_a.png"
+      },
+      {
+        "label": "イ",
+        "image": "extracted_images/q8d_b.png"
+      },
+      {
+        "label": "ウ",
+        "image": "extracted_images/q8d_c.png"
+      },
+      {
+        "label": "エ",
+        "image": "extracted_images/q8d_d.png"
+      }
+    ]
+  },
+  {
+    "id": "q9a",
+    "page": 29,
+    "question_text": "以下は，色の基本特性に関する問題である．ａ～ｄの問いに最も適するものを解答群から選び，記号で答えよ．\n\nａ． 図１の画像の色を図２のように変更した．色の三属性のうち何をどのように変更したか．",
+    "images": [
+      "extracted_images\\image_78.png",
+      "extracted_images\\image_79.png"
+    ],
+    "choices": [
+      {
+        "label": "ア",
+        "text": "彩度を高くした。"
+      },
+      {
+        "label": "イ",
+        "text": "彩度を低くした。"
+      },
+      {
+        "label": "ウ",
+        "text": "明度を高くした。"
+      },
+      {
+        "label": "エ",
+        "text": "明度を低くした。"
+      }
+    ]
+  },
+  {
+    "id": "q9b",
+    "page": 29,
+    "question_text": "ｂ． 図３の葉の色を図４のように変更した．どのような変更を行ったか．",
+    "images": [
+      "extracted_images/q9b_q1.png",
+      "extracted_images/q9b_q2.png"
+    ],
+    "choices": [
+      {
+        "label": "ア",
+        "text": "葉の色を後退色にした。"
+      },
+      {
+        "label": "イ",
+        "text": "葉の色を進出色にした。"
+      },
+      {
+        "label": "ウ",
+        "text": "加法混色で葉の色の緑(G)に、青(B)を混色した。"
+      },
+      {
+        "label": "エ",
+        "text": "加法混色で葉の色の緑(G)に、赤(R)を混色した。"
+      }
+    ]
+  },
+  {
+    "id": "q9c",
+    "page": 30,
+    "question_text": "ｃ． 以下の文章中のに適するものの組み合わせはどれか．\n\n加法混色と減法混色のいずれの場合でも，3つの色からほとんどの色をつくり出すことができ，これを色の①とよぶ．混色ではつくることのできない色を②とよび，ほとんどの色は②の混色によってつくられる．",
+    "images": [],
+    "choices": [
+      {
+        "label": "ア",
+        "text_parts": {
+          "①": "三原色",
+          "②": "三属性"
+        }
+      },
+      {
+        "label": "イ",
+        "text_parts": {
+          "①": "三原色",
+          "②": "三色性"
+        }
+      },
+      {
+        "label": "ウ",
+        "text_parts": {
+          "①": "三色性",
+          "②": "三原色"
+        }
+      },
+      {
+        "label": "エ",
+        "text_parts": {
+          "①": "三色性",
+          "②": "三属性"
+        }
+      }
+    ],
+    "table_header": [
+      "①",
+      "②"
+    ]
+  },
+  {
+    "id": "q9d",
+    "page": 30,
+    "question_text": "ｄ． 図５は視認性が低く文字が見えにくいため，視認性が高くなるように配色を変更した．最も効果的な配色パターンはどれか．",
+    "images": [
+      "extracted_images/q9d_q.png"
+    ],
+    "choices": [
+      {
+        "label": "ア",
+        "image": "extracted_images/q9d_a.png"
+      },
+      {
+        "label": "イ",
+        "image": "extracted_images/q9d_b.png"
+      },
+      {
+        "label": "ウ",
+        "image": "extracted_images/q9d_c.png"
+      },
+      {
+        "label": "エ",
+        "image": "extracted_images/q9d_d.png"
+      }
+    ]
+  },
+  {
+    "id": "q10a",
+    "page": 31,
+    "question_text": "以下は，ディジタル画像に関する問題である．ａ～ｄの問いに最も適するものを解答群から選び，記号で答えよ．\n\nａ． ディジタル画像は，標本化レベルが高いほど解像度が高くなり，量子化レベルが高いほど階調数が多くなる．解答群の画像のうち，量子化レベルが低く，標本化レベルが高いものはどれか．",
+    "images": [],
+    "choices": [
+      {
+        "label": "ア",
+        "image": "extracted_images\\image_80.jpeg"
+      },
+      {
+        "label": "イ",
+        "image": "extracted_images\\image_81.jpeg"
+      },
+      {
+        "label": "ウ",
+        "image": "extracted_images\\image_82.jpeg"
+      },
+      {
+        "label": "エ",
+        "image": "extracted_images\\image_83.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "q10b",
+    "page": 31,
+    "question_text": "ｂ． ラスタ形式の画像についての説明として，適切なものはどれか．",
+    "images": [],
+    "choices": [
+      {
+        "label": "ア",
+        "text": "画素が目立つことで生じるジャギーは、アンシャープマスクによって低減できる。"
+      },
+      {
+        "label": "イ",
+        "text": "ラスタ形式の画像を専門に扱うソフトウェアを、ドロー系ソフトとよぶ。"
+      },
+      {
+        "label": "ウ",
+        "text": "図画や線画よりも、写真の表現に適している。"
+      },
+      {
+        "label": "エ",
+        "text": "解像度を低く設定するほど、データサイズを大きくできる。"
+      }
+    ]
+  },
+  {
+    "id": "q10c",
+    "page": 32,
+    "question_text": "ｃ． 図１の黒い線は，ベジエ曲線である．ベジエ曲線は，赤点（アンカーポイント）と接線である青線（ハンドル）を操作して描かれる．アンカーポイント，およびハンドルの端にある青点を制御点とよび，この制御点の配置でベジエ曲線の形が決まる．図１の制御点を図２のように変化させたとき，描かれる曲線はどれか．",
+    "images": [
+      "extracted_images/q10c_q1.png",
+      "extracted_images/q10c_q2.png"
+    ],
+    "choices": [
+      {
+        "label": "ア",
+        "image": "extracted_images/q10a_a.png"
+      },
+      {
+        "label": "イ",
+        "image": "extracted_images/q10a_b.png"
+      },
+      {
+        "label": "ウ",
+        "image": "extracted_images/q10a_c.png"
+      },
+      {
+        "label": "エ",
+        "image": "extracted_images/q10a_d.png"
+      }
+    ]
+  },
+  {
+    "id": "q10d",
+    "page": 32,
+    "question_text": "ｄ． 設問ｃの図１のような，始点と終点をもつベジエ曲線を何とよぶか．",
+    "images": [],
+    "choices": [
+      {
+        "label": "ア",
+        "text": "双曲線"
+      },
+      {
+        "label": "イ",
+        "text": "方向線"
+      },
+      {
+        "label": "ウ",
+        "text": "ファンクションカーブ"
+      },
+      {
+        "label": "エ",
+        "text": "オープンパス"
+      }
+    ]
+  }
+];
