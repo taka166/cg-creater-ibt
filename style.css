@@ -370,4 +370,8 @@ table.choice-table th {
 .no-break {
     white-space: nowrap;       /* 内部での改行を禁止 */
     display: inline-block;     /* ブロックとして扱う */
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0.2px;
+    color: #000;
 }
