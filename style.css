@@ -370,8 +370,114 @@ table.choice-table th {
 .no-break {
     white-space: nowrap;       /* 内部での改行を禁止 */
     display: inline-block;     /* ブロックとして扱う */
-    font-weight: bold;
-    font-size: 1.2em;
     margin: 0.2px;
     color: #000;
+}
+
+/* =========================================
+   スマホ・タブレット対応 (レスポンシブ)
+   ========================================= */
+@media screen and (max-width: 768px) {
+
+    /* --- 全体のレイアウト調整 --- */
+    .book-container {
+        padding: 20px 10px; /* 左右の余白を狭くする */
+    }
+
+    .question-group {
+        padding: 20px;      /* 大問の枠内の余白を減らす */
+        margin-bottom: 30px;
+    }
+
+    .group-title {
+        font-size: 20px;    /* タイトルの文字を少し小さく */
+        margin-bottom: 25px;
+    }
+
+    /* --- 画像の並びを「縦並び」に変更 --- */
+    /* グリッド（3列、4列など）をすべて1列にする */
+    .horizontal-group-2,
+    .horizontal-group-3,
+    .horizontal-group-4,
+    .q2b-layout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* 横並び(flex)を指定している箇所も折り返しを許可する */
+    .horizontal-group {
+        flex-wrap: wrap;
+    }
+
+    /* q2bなどの特殊なグリッド配置を解除（リセット） */
+    .q2b-layout figure:nth-child(4),
+    .q2b-layout figure:nth-child(5),
+    #question-q2c .horizontal-group-2 figure:nth-child(3),
+    #question-q7c .horizontal-group-2 figure:nth-child(3) {
+        grid-column: auto !important;
+        justify-self: center !important;
+        width: 100% !important;
+    }
+    
+    /* 画像サイズを画面幅いっぱいに調整 */
+    .horizontal-group img,
+    .horizontal-group-2 img,
+    .horizontal-group-3 img,
+    .question-images img {
+        max-width: 100% !important;
+        height: auto !important;
+        max-height: none !important; /* 高さ制限を解除して見やすく */
+    }
+
+    /* --- 選択肢（画像）のレイアウト --- */
+    /* 2列を1列にして画像を大きく見せる */
+    .choices.image-choices {
+        grid-template-columns: 1fr; /* 1列にする */
+        justify-items: center;      /* 中央寄せ */
+    }
+    
+    .choices.image-choices img {
+        max-width: 80%; /* 画像が大きすぎないように調整 */
+    }
+
+    /* --- 表形式の選択肢（スクロール対応） --- */
+    /* 表が画面からはみ出さないように横スクロールさせる */
+    table.choice-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap; /* 勝手な改行を防ぐ */
+    }
+
+    /* --- ボタン類 --- */
+    .nav-buttons {
+        flex-direction: column-reverse; /* 「次へ」を上、「前へ」を下にする */
+        gap: 15px;
+    }
+
+    .nav-btn {
+        width: 100%;       /* ボタンを画面幅いっぱいに */
+        padding: 15px 0;   /* 指で押しやすく高さを出す */
+        font-size: 18px;
+    }
+
+    /* 採点ボタン */
+    .grade-button {
+        width: 100%;
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    /* --- 読みやすさ調整 --- */
+    .question-text {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    /* 【 a 】などの強調表示の調整 */
+    .no-break {
+        font-size: 1.1em; /* スマホでは少し控えめに拡大 */
+        margin: 0 1px;
+    }
 }
